@@ -1036,7 +1036,7 @@
 
             <div class="flex flex-col md:flex-row items-center md:space-x-10 my-20">
                 <div data-aos="fade-right" class="md:w-6/12">
-                    <img class="md:w-11/12" src="https://mhaecal.github.io/frontend/img/true-false.png">
+                    <img class="md:w-11/12 rounded-2xl" src="images/A_asian_veterinarian_is_taking_care_of_pets.png">
                 </div>
                 <div data-aos="fade-left" class="md:w-6/12 md:transform md:-translate-y-20">
                     <h1 class="font-semibold text-darken text-3xl mt-10 md:mt-0 lg:pr-64">
@@ -1086,8 +1086,8 @@
                         class="w-32 h-32 rounded-full absolute z-0 left-4 -top-12 animate-pulse"></div>
                     <div style="background: #33D9EF;"
                         class="w-5 h-5 rounded-full absolute z-0 left-36 -top-12 animate-ping"></div>
-                    <img class="relative z-40 floating" loading="lazy"
-                        src="https://mhaecal.github.io/frontend/img/vcall.png" alt="">
+                    <img class="relative z-40 floating rounded-2xl" loading="lazy"
+                        src="images/safe_and_professional_surger.png" alt="">
                     <div style="background: #5B61EB;"
                         class="w-36 h-36 rounded-full absolute z-0 right-16 -bottom-1 animate-pulse"></div>
                     <div style="background: #F56666;"
@@ -1121,16 +1121,75 @@
                         và chu đáo nhất.
                     </p>
                 </div>
-                <img data-aos="fade-left" class="md:w-1/2"
-                    src="https://mhaecal.github.io/frontend/img/girl-with-books.png">
+                <img data-aos="fade-left" class="md:w-1/2" src="images/Excellent_customer.png">
             </div>
         </section>
 
-        <section>
+        <section class="px-2 lg:px-24 pb-20 lg:pb-40 relative">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.739388516465!2d106.68849177583874!3d10.831245058178554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528f64d4e33b7%3A0x6ad2698b3cbe8df0!2zNDMwIE5ndXnhu4VuIFRow6FpIFPGoW4sIFBoxrDhu51uZyA1LCBHw7IgVuG6pXAsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1713688058351!5m2!1svi!2s"
-                width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                width="100%" height="600" class="rounded-2xl shadow-lg" allowfullscreen="false" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="absolute bottom-0 lg:bottom-20 right-0 lg:right-32 bg-white p-6 shadow-lg rounded-2xl">
+                <h1 class="text-2xl uppercase text-center font-bold text-logo">
+                    <span class="block">ĐẶT LỊCH KHÁM SỨC KHOẺ</span>
+                    DỊCH VỤ CHĂM SÓC THÚ CƯNG
+                </h1>
+                <form action="javascript:onBookFn()">
+                    <div class="flex flex-row justify-between my-4 gap-4">
+                        <div class="w-full">
+                            <label for="name">Họ và tên</label>
+                            <input id="name" class="rounded-lg w-full border p-2" type="text" placeholder="Nguyễn Văn A"
+                                required />
+                        </div>
+                        <div class="w-full">
+                            <label for="tel">Số điện thoại</label>
+                            <input id="tel" class="rounded-lg w-full border p-2" type="tel" placeholder="012345678"
+                                required />
+                            <p class="px-2 text-xs" id="phoneValidationMessage"></p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between my-4 gap-4">
+                        <div class="w-full">
+                            <label for="date">Chọn ngày</label>
+                            <input id="date" class="rounded-lg w-full border p-2" type="date" required />
+                        </div>
+                        <div class="w-full">
+                            <label for="time">Chọn giờ</label>
+                            <input id="time" class="rounded-lg w-full border p-2" type="time" required />
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between my-4 gap-4">
+                        <div class="w-full">
+                            <label for="service">Dịch vụ</label>
+                            <select class="rounded-lg w-full border p-2" name="service" id="service" required>
+                                <option value="">Chọn dịch vụ</option>
+                                <option value="DieuTri">Điều trị</option>
+                                <option value="PhauThuat">Phẫu thuật</option>
+                                <option value="NoiSoi">Nội soi</option>
+                                <option value="XQuang">Xquang</option>
+                                <option value="PetHotel">Pet hotel</option>
+                                <option value="PetSpa">Pet spa</option>
+                                <option value="PetShop">Pet shop</option>
+                            </select>
+                        </div>
+                        <div class="w-full">
+                            <label for="branch">Chi nhánh</label>
+                            <select class="rounded-lg w-full border p-2" name="branch" id="branch" required>
+                                <option value="">Chi nhánh</option>
+                                <option value="CoSo1">Cơ sở 1</option>
+                                <option value="CoSo2">Cơ sở 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit"
+                            class="uppercase w-full bg-green-500 py-2 rounded-lg font-bold text-white hover:bg-green-600">Đặt
+                            lịch ngay</button>
+                    </div>
+                </form>
+            </div>
         </section>
 
         <footer class="w-full" id="contact">
@@ -1142,16 +1201,16 @@
                             <h6>Chúng tôi sẽ gửi cho bạn các thông tin mới nhất qua email</h6>
                         </div>
                         <div>
-                            <div class="border flex rounded-full my-10 md:my-0">
-                                <input type="email" pattern="" class="px-4 py-2 text-xl bg-transparent outline-none"
+                            <label for="email" class="border flex rounded-full justify-between my-10 md:my-0">
+                                <input id="email" type="email" pattern=""
+                                    class="px-4 py-2 text-xl bg-transparent outline-none"
                                     placeholder="example@gmail.com" id="email" />
-                                <button
-                                    class="text-white w-40 sm:w-auto mx-auto sm:mx-0 font-semibold px-5 py-2 rounded-full"
+                                <button class="text-white w-40 px-5 py-2 rounded-full"
                                     style="background: linear-gradient(105.5deg, #0add13 19.57%, #01b809 78.85%);"
                                     onclick="onSubscribeFn()">
                                     Đăng ký
                                 </button>
-                            </div>
+                            </label>
                             <p class="px-2" id="validationMessage"></p>
                         </div>
                     </div>
@@ -1170,18 +1229,45 @@
                             </div>
                         </a>
                     </div>
-                    <div class="flex justify-center gap-4 text-white">
+                    <div class="flex flex-col md:flex-row justify-between gap-4 text-white">
                         <div>
-                            Cơ sở 1:
-                            <a target="_blank" href="https://maps.app.goo.gl/vevm4pLJVeVxSCCM6" class="font-bold">
-                                430 Nguyễn Thái Sơn, Phường 5, Gò Vấp, TP.HCM
-                            </a>
+                            <div class="mb-4">
+                                <h2>Cơ sở 1:</h2>
+                                <p>
+                                    Địa chỉ:
+                                    <a target="_blank" href="https://maps.app.goo.gl/vevm4pLJVeVxSCCM6">
+                                        <strong>430 Nguyễn Thái Sơn, Phường 5, Gò Vấp, TP.HCM</strong>
+                                    </a>
+                                </p>
+                                <p>
+                                    Số điện thoại:
+                                    <a href="tel:+84932375639">
+                                        <strong>0932 375 639</strong>
+                                    </a>
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Cơ sở 2:</h2>
+                                <p>
+                                    Địa chỉ:
+                                    <a target="_blank" href="https://maps.app.goo.gl/ZYZGKLomMyUUGEFT7">
+                                        <strong>A49 Tô Ký, P.Đông Hưng Thuận, Quận 12, TP.HCM</strong>
+                                    </a>
+                                </p>
+                                <p>
+                                    Số điện thoại:
+                                    <a href="tel:+84987375639">
+                                        <strong>0987 375 639</strong>
+                                    </a>
+                                </p>
+                            </div>
                         </div>
                         <div>
-                            Cơ sở 2:
-                            <a target="_blank" href="https://maps.app.goo.gl/ZYZGKLomMyUUGEFT7" class="font-bold">
-                                A49 Tô Ký, P.Đông Hưng Thuận, Quận 12, TP.HCM
-                            </a>
+                            <iframe
+                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fphongkhamthuypetplusgovap%2F&tabs=events&width=340&height=131&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                width="340" height="131" style="border:none;overflow:hidden" scrolling="no"
+                                frameborder="0" allowfullscreen="true"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                         </div>
                     </div>
                 </div>
@@ -1190,371 +1276,399 @@
                 &copy; 2024 Pet Plus.
             </div>
         </footer>
-    <script>
-        // Get all menu from document
-        document.querySelectorAll('.buttonTrigger').forEach(OpenMenu);
+        <script>
+            // Get all menu from document
+            document.querySelectorAll('.buttonTrigger').forEach(OpenMenu);
 
-        // Menu Open and Close function
-        function OpenMenu(active) {
-            if (active.classList.contains('buttonTrigger') === true) {
-                active.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    this.parentElement.classList.toggle('active');
-                    this.classList.toggle('active');
-                });
+            // Menu Open and Close function
+            function OpenMenu(active) {
+                if (active.classList.contains('buttonTrigger') === true) {
+                    active.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        this.parentElement.classList.toggle('active');
+                        this.classList.toggle('active');
+                    });
+                }
+            };
+
+        </script>
+        <style>
+            .bar-content .content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-flow: column;
+                padding: 0 30px;
             }
-        };
 
-    </script>
-    <style>
-        .bar-content .content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-flow: column;
-            padding: 0 30px;
-        }
+            .bar-content .content h1 {
+                margin-top: 60px;
+                text-align: center;
+            }
 
-        .bar-content .content h1 {
-            margin-top: 60px;
-            text-align: center;
-        }
-
-        .bar-content .content p {
-            margin: 0 auto 15px;
-            width: 700px;
-            line-height: 1.8;
-            text-align: center;
-        }
-
-        @media (max-width: 767px) {
             .bar-content .content p {
-                width: 100%;
+                margin: 0 auto 15px;
+                width: 700px;
+                line-height: 1.8;
+                text-align: center;
             }
-        }
 
-        .bar-content .content pre {
-            padding: 15px;
-            margin-top: 0;
-            margin-bottom: 45px;
-            border-radius: 5px;
-            text-align: center;
-            text-wrap: wrap;
-            line-height: 1.6;
-            color: #000;
-            background-color: #F7F7F7;
-            overflow-x: auto;
-        }
-
-        .bar-content .contentDemo:empty {
-            margin: auto;
-            width: 500px;
-            height: 600px;
-            /* change height to see repeat-y behavior */
-            background-image: radial-gradient(circle 50px at 50px 50px, lightgray 99%, transparent 0), linear-gradient(100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80%), linear-gradient(lightgray 20px, transparent 0), linear-gradient(lightgray 20px, transparent 0), linear-gradient(lightgray 20px, transparent 0), linear-gradient(lightgray 20px, transparent 0);
-            background-repeat: repeat-y;
-            background-size: 100px 200px, 50px 200px, 150px 200px, 350px 200px, 300px 200px, 250px 200px;
-            background-position: 0 0, 0 0, 120px 0, 120px 40px, 120px 80px, 120px 120px;
-        }
-
-        .bar-content .fixedSidebar {
-            position: fixed;
-            z-index: 99;
-            background-color: var(--color-900);
-            ;
-        }
-
-        .bar-content .fixedSidebar.active .sidebarItem {
-            transform: scale(0);
-            margin: 0;
-            width: 0;
-            height: 0;
-        }
-
-        .bar-content .fixedSidebar [data-tooltip] {
-            position: relative;
-            z-index: 9;
-        }
-
-        .bar-content .fixedSidebar [data-tooltip]::before {
-            position: absolute;
-            content: attr(data-tooltip);
-            display: block;
-            padding: 7px;
-            color: #fff;
-            text-align: center;
-            font-size: 0.8em;
-            white-space: nowrap;
-            border-radius: 4px;
-            background: var(--color-900);
-            ;
-            opacity: 0;
-            visibility: hidden;
-            cursor: default;
-            pointer-events: none;
-            transition: all 0.2s ease-in-out;
-        }
-
-        .bar-content .fixedSidebar [data-tooltip]:hover::before {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .bar-content .fixedSidebar .sidebarItem {
-            position: relative;
-            z-index: 10;
-            display: inline-block;
-            margin: 10px 0;
-            width: 24px;
-            height: 24px;
-            border-radius: 30px;
-            transition: 0.25s;
-        }
-
-        .bar-content .fixedSidebar .sidebarItem svg {
-            fill: #fff;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarRight {
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 15px;
-            border-top-left-radius: 30px;
-            border-bottom-left-radius: 30px;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarRight:before,
-        .bar-content .fixedSidebar.fixedSidebarRight:after {
-            content: "";
-            pointer-events: none;
-            position: absolute;
-            height: 30px;
-            width: 60px;
-            right: 0px;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarRight:before {
-            top: -30px;
-            border-radius: 0 0 50px 0;
-            box-shadow: 30px 1px 0 0 var(--color-900);
-            ;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarRight:after {
-            bottom: -30px;
-            border-radius: 0 50px 0px 0;
-            box-shadow: 30px -1px 0 0 var(--color-900);
-            ;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarRight .buttonTrigger svg {
-            transform: rotate(180deg);
-            transition: 0.25s;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarRight .buttonTrigger.active {
-            transform: scale(1) !important;
-            width: 24px !important;
-            height: 24px !important;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarRight .buttonTrigger.active svg {
-            transform: rotate(0);
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarRight [data-tooltip]::before {
-            top: 50%;
-            right: 100%;
-            transform: translateY(-50%);
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarRight [data-tooltip]:hover::before {
-            right: 50px;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarLeft {
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 15px;
-            border-top-right-radius: 30px;
-            border-bottom-right-radius: 30px;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarLeft:before,
-        .bar-content .fixedSidebar.fixedSidebarLeft:after {
-            content: "";
-            pointer-events: none;
-            position: absolute;
-            height: 30px;
-            width: 60px;
-            left: 0px;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarLeft:before {
-            top: 0;
-            border-radius: 0 0 50px 0;
-            box-shadow: 30px 1px 0 0 var(--color-900);
-            ;
-            transform: rotate(90deg) translateY(50%) translateX(-75%);
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarLeft:after {
-            bottom: 0;
-            border-radius: 0 50px 0px 0;
-            box-shadow: 30px -1px 0 0 var(--color-900);
-            ;
-            transform: rotate(-0.25turn) translateX(-75%) translateY(-50%);
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarLeft .buttonTrigger svg {
-            transform: rotate(0deg);
-            transition: 0.25s;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarLeft .buttonTrigger.active {
-            transform: scale(1) !important;
-            width: 24px !important;
-            height: 24px !important;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarLeft .buttonTrigger.active svg {
-            transform: rotate(180deg);
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarLeft [data-tooltip]::before {
-            top: 50%;
-            left: 100%;
-            transform: translateY(-50%);
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarLeft [data-tooltip]:hover::before {
-            left: 50px;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarBottom {
-            right: 50%;
-            top: auto;
-            bottom: 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 15px 20px;
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
-            transform: translateX(50%) translateY(0);
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarBottom:before,
-        .bar-content .fixedSidebar.fixedSidebarBottom:after {
-            content: "";
-            pointer-events: none;
-            position: absolute;
-            height: 30px;
-            width: 60px;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarBottom:before {
-            bottom: 0;
-            left: 0;
-            border-radius: 0 0 50px 0;
-            box-shadow: 30px 1px 0 0 var(--color-900);
-            transform: rotate(0deg) translateY(0) translateX(-100%);
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarBottom:after {
-            bottom: 0;
-            right: 0;
-            border-radius: 0 50px 0px 0;
-            box-shadow: 30px -1px 0 0 var(--color-900);
-            transform: rotate(180deg) translateX(-100%) translateY(0%);
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarBottom .sidebarItem {
-            margin: 0 15px;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarBottom.active .sidebarItem {
-            margin: 0;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarBottom .buttonTrigger svg {
-            transform: rotate(45deg);
-            transition: 0.25s;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarBottom .buttonTrigger.active {
-            transform: scale(1) !important;
-            width: 24px !important;
-            height: 24px !important;
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarBottom .buttonTrigger.active svg {
-            transform: rotate(0deg);
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarBottom [data-tooltip]::before {
-            top: -30px;
-            right: 50%;
-            transform: translateX(50%) translateY(0);
-        }
-
-        .bar-content .fixedSidebar.fixedSidebarBottom [data-tooltip]:hover::before {
-            top: -60px;
-        }
-
-        .wifi-icon::before {
-            top: -60px !important;
-            opacity: 1 !important;
-            visibility: visible !important;
-        }
-    </style>
-    <!-- AOS init -->
-    <script src="js/aos.js"></script>
-    <script>
-        AOS.init();
-
-        const header = document.getElementById("header");
-
-        window.addEventListener("scroll", () => {
-            const currentScroll = window.pageYOffset;
-
-            if (currentScroll > 80) {
-                header.classList.remove("bg-cream");
-                header.classList.add("bg-white");
-                header.classList.add("shadow-lg");
-            } else {
-                header.classList.add("bg-cream");
-                header.classList.remove("bg-white");
-                header.classList.remove("shadow-lg");
+            @media (max-width: 767px) {
+                .bar-content .content p {
+                    width: 100%;
+                }
             }
-        });
 
-        function onSubscribeFn() {
-            const emailInput = document.getElementById("email");
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            const email = emailInput.value;
-
-            if (emailPattern.test(email)) {
-                alert("Cảm ơn bạn đã đăng ký nhận tin từ chúng tôi!");
-                document.getElementById("validationMessage").innerText = "Đăng ký thành công!";
-                document.getElementById("validationMessage").style.color = "green";
-            } else {
-                document.getElementById("validationMessage").innerText = "Email không hợp lệ, vui lòng kiểm tra lại!";
-                document.getElementById("validationMessage").style.color = "red";
+            .bar-content .content pre {
+                padding: 15px;
+                margin-top: 0;
+                margin-bottom: 45px;
+                border-radius: 5px;
+                text-align: center;
+                text-wrap: wrap;
+                line-height: 1.6;
+                color: #000;
+                background-color: #F7F7F7;
+                overflow-x: auto;
             }
-        }
-    </script>
+
+            .bar-content .contentDemo:empty {
+                margin: auto;
+                width: 500px;
+                height: 600px;
+                /* change height to see repeat-y behavior */
+                background-image: radial-gradient(circle 50px at 50px 50px, lightgray 99%, transparent 0), linear-gradient(100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80%), linear-gradient(lightgray 20px, transparent 0), linear-gradient(lightgray 20px, transparent 0), linear-gradient(lightgray 20px, transparent 0), linear-gradient(lightgray 20px, transparent 0);
+                background-repeat: repeat-y;
+                background-size: 100px 200px, 50px 200px, 150px 200px, 350px 200px, 300px 200px, 250px 200px;
+                background-position: 0 0, 0 0, 120px 0, 120px 40px, 120px 80px, 120px 120px;
+            }
+
+            .bar-content .fixedSidebar {
+                position: fixed;
+                z-index: 99;
+                background-color: var(--color-900);
+                ;
+            }
+
+            .bar-content .fixedSidebar.active .sidebarItem {
+                transform: scale(0);
+                margin: 0;
+                width: 0;
+                height: 0;
+            }
+
+            .bar-content .fixedSidebar [data-tooltip] {
+                position: relative;
+                z-index: 9;
+            }
+
+            .bar-content .fixedSidebar [data-tooltip]::before {
+                position: absolute;
+                content: attr(data-tooltip);
+                display: block;
+                padding: 7px;
+                color: #fff;
+                text-align: center;
+                font-size: 0.8em;
+                white-space: nowrap;
+                border-radius: 4px;
+                background: var(--color-900);
+                ;
+                opacity: 0;
+                visibility: hidden;
+                cursor: default;
+                pointer-events: none;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .bar-content .fixedSidebar [data-tooltip]:hover::before {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .bar-content .fixedSidebar .sidebarItem {
+                position: relative;
+                z-index: 10;
+                display: inline-block;
+                margin: 10px 0;
+                width: 24px;
+                height: 24px;
+                border-radius: 30px;
+                transition: 0.25s;
+            }
+
+            .bar-content .fixedSidebar .sidebarItem svg {
+                fill: #fff;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarRight {
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 15px;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarRight:before,
+            .bar-content .fixedSidebar.fixedSidebarRight:after {
+                content: "";
+                pointer-events: none;
+                position: absolute;
+                height: 30px;
+                width: 60px;
+                right: 0px;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarRight:before {
+                top: -30px;
+                border-radius: 0 0 50px 0;
+                box-shadow: 30px 1px 0 0 var(--color-900);
+                ;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarRight:after {
+                bottom: -30px;
+                border-radius: 0 50px 0px 0;
+                box-shadow: 30px -1px 0 0 var(--color-900);
+                ;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarRight .buttonTrigger svg {
+                transform: rotate(180deg);
+                transition: 0.25s;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarRight .buttonTrigger.active {
+                transform: scale(1) !important;
+                width: 24px !important;
+                height: 24px !important;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarRight .buttonTrigger.active svg {
+                transform: rotate(0);
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarRight [data-tooltip]::before {
+                top: 50%;
+                right: 100%;
+                transform: translateY(-50%);
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarRight [data-tooltip]:hover::before {
+                right: 50px;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarLeft {
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 15px;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarLeft:before,
+            .bar-content .fixedSidebar.fixedSidebarLeft:after {
+                content: "";
+                pointer-events: none;
+                position: absolute;
+                height: 30px;
+                width: 60px;
+                left: 0px;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarLeft:before {
+                top: 0;
+                border-radius: 0 0 50px 0;
+                box-shadow: 30px 1px 0 0 var(--color-900);
+                ;
+                transform: rotate(90deg) translateY(50%) translateX(-75%);
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarLeft:after {
+                bottom: 0;
+                border-radius: 0 50px 0px 0;
+                box-shadow: 30px -1px 0 0 var(--color-900);
+                ;
+                transform: rotate(-0.25turn) translateX(-75%) translateY(-50%);
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarLeft .buttonTrigger svg {
+                transform: rotate(0deg);
+                transition: 0.25s;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarLeft .buttonTrigger.active {
+                transform: scale(1) !important;
+                width: 24px !important;
+                height: 24px !important;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarLeft .buttonTrigger.active svg {
+                transform: rotate(180deg);
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarLeft [data-tooltip]::before {
+                top: 50%;
+                left: 100%;
+                transform: translateY(-50%);
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarLeft [data-tooltip]:hover::before {
+                left: 50px;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarBottom {
+                right: 50%;
+                top: auto;
+                bottom: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 15px 20px;
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+                transform: translateX(50%) translateY(0);
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarBottom:before,
+            .bar-content .fixedSidebar.fixedSidebarBottom:after {
+                content: "";
+                pointer-events: none;
+                position: absolute;
+                height: 30px;
+                width: 60px;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarBottom:before {
+                bottom: 0;
+                left: 0;
+                border-radius: 0 0 50px 0;
+                box-shadow: 30px 1px 0 0 var(--color-900);
+                transform: rotate(0deg) translateY(0) translateX(-100%);
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarBottom:after {
+                bottom: 0;
+                right: 0;
+                border-radius: 0 50px 0px 0;
+                box-shadow: 30px -1px 0 0 var(--color-900);
+                transform: rotate(180deg) translateX(-100%) translateY(0%);
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarBottom .sidebarItem {
+                margin: 0 15px;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarBottom.active .sidebarItem {
+                margin: 0;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarBottom .buttonTrigger svg {
+                transform: rotate(45deg);
+                transition: 0.25s;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarBottom .buttonTrigger.active {
+                transform: scale(1) !important;
+                width: 24px !important;
+                height: 24px !important;
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarBottom .buttonTrigger.active svg {
+                transform: rotate(0deg);
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarBottom [data-tooltip]::before {
+                top: -30px;
+                right: 50%;
+                transform: translateX(50%) translateY(0);
+            }
+
+            .bar-content .fixedSidebar.fixedSidebarBottom [data-tooltip]:hover::before {
+                top: -60px;
+            }
+
+            .wifi-icon::before {
+                top: -60px !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+        </style>
+        <!-- AOS init -->
+        <script src="js/aos.js"></script>
+        <script>
+            AOS.init();
+
+            const header = document.getElementById("header");
+
+            window.addEventListener("scroll", () => {
+                const currentScroll = window.pageYOffset;
+
+                if (currentScroll > 80) {
+                    header.classList.remove("bg-cream");
+                    header.classList.add("bg-white");
+                    header.classList.add("shadow-lg");
+                } else {
+                    header.classList.add("bg-cream");
+                    header.classList.remove("bg-white");
+                    header.classList.remove("shadow-lg");
+                }
+            });
+
+            function onBookFn() {
+                const nameInput = document.getElementById("name");
+                const telInput = document.getElementById("tel");
+                const dateInput = document.getElementById("date");
+                const timeInput = document.getElementById("time");
+                const serviceInput = document.getElementById("service");
+                const branchInput = document.getElementById("branch");
+
+                const name = nameInput.value;
+                const tel = telInput.value;
+                const date = dateInput.value;
+                const time = timeInput.value;
+                const service = serviceInput.value;
+                const branch = branchInput.value;
+
+                const myPhoneRegex = /(84|0[3|5|7|8|9])+([0-9]{8})\b/g;
+
+                if (myPhoneRegex.test(tel)) {
+                    if (name && date && time && service && branch) {
+                        console.log({ name, tel, date, time, service, branch });
+                        alert("Đăng ký thành công!");
+                    }
+                } else {
+                    document.getElementById("phoneValidationMessage").innerText = "Số điện thoại không hợp lệ, vui lòng kiểm tra lại!";
+                    document.getElementById("phoneValidationMessage").style.color = "red";
+                }
+            }
+
+            function onSubscribeFn() {
+                const emailInput = document.getElementById("email");
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                const email = emailInput.value;
+
+                if (emailPattern.test(email)) {
+                    alert("Cảm ơn bạn đã đăng ký nhận tin từ chúng tôi!");
+                    document.getElementById("validationMessage").innerText = "Đăng ký thành công!";
+                    document.getElementById("validationMessage").style.color = "green";
+                } else {
+                    document.getElementById("validationMessage").innerText = "Email không hợp lệ, vui lòng kiểm tra lại!";
+                    document.getElementById("validationMessage").style.color = "red";
+                }
+            }
+        </script>
 </body>
 
 </html>
